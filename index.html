@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Alicia Herrera Sánchez</title>
+  <style>
+    /* Variables de color */
+    :root {
+      --bg: #e0e1dd;
+      --primary: #415a77;
+      --header-bg: #778da9;
+      --text: #0d1b2a;
+      --gray: #1b263b;
+      --badge-bg: #778da9;
+      --badge-text: #e0e1dd;
+    }
+    /* Reset básico */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: 'Segoe UI', Tahoma, sans-serif; 
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--primary); text-decoration: none; transition: color 0.3s ease; }
+    a:hover { color: var(--gray); }
+    header {
+      background: var(--header-bg);
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a { margin: 0 15px; font-weight: 500; color: var(--primary); }
+    nav a:hover { color: var(--bg); }
+    .container { width: 90%; max-width: 1000px; margin: 40px auto; }
+    section { margin-bottom: 60px; }
+    /* Titulares */
+    h1 { color: var(--text); font-size: 2.5rem; margin-bottom: 10px; }
+    h2 { color: var(--primary); font-size: 1.8rem; margin-bottom: 20px; }
+    h3 { color: var(--primary); font-size: 1.2rem; margin-bottom: 10px; }
+    .grid { display: grid; gap: 20px; }
+    .two-col { grid-template-columns: 1fr 1fr; }
+    ul { list-style: none; }
+    .skills li, .languages li { 
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      display: inline-block; 
+      margin: 5px; 
+      padding: 8px 12px; 
+      border-radius: 20px; 
+      font-size: 0.9rem;
+    }
+    .button { 
+      display: inline-block; 
+      padding: 12px 24px; 
+      background: var(--primary); 
+      color: var(--bg); 
+      border-radius: 30px; 
+      font-weight: 500; 
+      transition: background 0.3s ease;
+    }
+    .button:hover { background: var(--gray); }
+    footer { background: var(--bg); padding: 20px 0; text-align: center; font-size: 0.9rem; color: var(--gray); box-shadow: 0 -2px 5px rgba(0,0,0,0.1); }
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alicia Herrera Sánchez</h1>
+    <p style="color: var(--bg)">Desarrolladora de Aplicaciones Multiplataforma</p>
+    <nav>
+      <a href="#about">Sobre mí</a>
+      <a href="#experience">Experiencia</a>
+      <a href="#education">Formación</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>Sobre mí</h2>
+      <p>Joven con pasión por su profesión, excelente capacidad de organización y facilidad para el trabajo en equipo. Persona muy adaptable a todo tipo de entornos y clara orientación a objetivos. Desearía desarrollarme profesionalmente en una empresa con proyección de futuro.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experiencia</h2>
+      <div class="grid two-col">
+        <div>
+          <h3>Desarrollador de Aplicaciones</h3>
+          <p><strong>Estudio Nemo, Granada</strong> | 03/2025 - 06/2025</p>
+          <ul>
+            <li>Integración de software y componentes multimedia.</li>
+            <li>Colaboración con equipos de diseño para definir características.</li>
+            <li>Implementación de mejoras de funcionalidad y rendimiento.</li>
+            <li>Diseño de aplicaciones según requisitos de clientes.</li>
+            <li>Metodologías ágiles para desarrollo de soluciones.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Formación</h2>
+      <p><strong>Desarrollo de Aplicaciones Multiplataforma</strong>, Grado Superior | Hermenegildo Lanz, Granada, 2025</p>
+      <p>Estudio de desarrollo, implementación, documentación y mantenimiento de aplicaciones para diferentes plataformas y dispositivos.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Habilidades</h2>
+      <ul class="skills">
+        <li>Trabajo en equipo</li>
+        <li>Resolución de problemas</li>
+        <li>Soporte técnico</li>
+        <li>Autonomía</li>
+      </ul>
+    </section>
+
+    <section id="languages">
+      <h2>Idiomas</h2>
+      <ul class="languages">
+        <li>Español (Nativo)</li>
+        <li>Inglés C1 (Avanzado)</li>
+        <li>Alemán A1 (Principiante)</li>
+      </ul>
+    </section>
+
+    <section id="programming-languages">
+      <h2>Lenguajes de Programación</h2>
+      <ul class="skills">
+        <li>Java</li>
+        <li>Kotlin</li>
+        <li>JavaScript</li>
+        <li>C / C++</li>
+        <li>C#</li>
+        <li>SQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>PHP</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Proyectos</h2>
+      <div class="project-item">
+        <p><strong>ImaginaRadio App</strong>: Aplicación multiplataforma desarrollada para ImaginaRadio que permite el streaming en tiempo real de su emisora y la visualización interactiva de noticias y contenidos exclusivos. Implementada bajo metodologías ágiles, con integración de APIs de audio y gestión dinámica de feeds de noticias.</p>
+        <div class="project-images">
+          <img src="6cf5e527-39bf-43fc-889b-72fb1248d57d.png" alt="Pantalla de Última hora en ImaginaRadio" />
+          <img src="e75ac57e-1f9d-444c-a731-974629d94a46.png" alt="Pantalla de programación diaria en ImaginaRadio" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <p>📍 Santa Clotilde 44, 18003, Granada</p>
+      <p>📞 +34 633 233 199</p>
+      <p>✉️ <a href="mailto:aliciaherreradev@gmail.com">aliciaherreradev@gmail.com</a></p>
+      <p>🐙 <a href="https://github.com/aliherrerasz" target="_blank">github.com/aliherrerasz</a></p>
+      <a href="Alicia_Herrera_Sanchez_CV.pdf" class="button" download>Descargar CV</a>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Alicia Herrera Sánchez</p>
+  </footer>
+</body>
+</html>
